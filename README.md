@@ -48,9 +48,51 @@ For production environments, ensure `DJANGO_DEBUG` is set to `False` and configu
 
 ## API Endpoints
 
-- `GET /fizzbuzz/`: Lists all Fizzbuzz items.
-- `POST /fizzbuzz/`: Creates a new Fizzbuzz item with JSON payload.
-- `GET /fizzbuzz/{id}/`: Retrieves a Fizzbuzz item by `id`.
+### List Fizzbuzz Items
+- **Endpoint**: `GET /fizzbuzz/`
+- **Response Body**:
+    ```json
+    [
+        {
+            "fizzbuzz_id": 1,
+            "creation_date": "2024-02-11T01:09:41.679514Z",
+            "message": "Example Fizzbuzz message",
+            "user_agent": "Mozilla/5.0"
+        }
+    ]
+    ```
+
+### Retrieve a Fizzbuzz Item
+- **Endpoint**: `GET /fizzbuzz/{id}/`
+- **Response Body**:
+    ```json
+    {
+        "fizzbuzz_id": 1,
+        "creation_date": "2024-02-11T01:09:41.679514Z",
+        "message": "Example Fizzbuzz message",
+        "user_agent": "Mozilla/5.0"
+    }
+    ```
+
+### Create a Fizzbuzz Item
+- **Endpoint**: `POST /fizzbuzz/`
+- **Request Body**:
+    ```json
+    {
+        "message": "New Fizzbuzz message",
+        "user_agent": "Mozilla/5.0"
+    }
+    ```
+- **Response Body**:
+    ```json
+    {
+        "fizzbuzz_id": 2,
+        "creation_date": "2024-02-11T01:09:41.679514Z",
+        "message": "New Fizzbuzz message",
+        "user_agent": "Mozilla/5.0"
+    }
+    ```
+
 
 ## Testing
 
