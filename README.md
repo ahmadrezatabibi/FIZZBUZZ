@@ -32,7 +32,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Visit `http://127.0.0.1:8000/` in your browser to view the browsable API.
+Visit `http://127.0.0.1:8000/fizzbuzz` in your browser to view the browsable API.
 
 ## Configuration
 
