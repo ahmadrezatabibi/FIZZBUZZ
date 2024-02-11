@@ -49,7 +49,7 @@ For production environments, ensure `DJANGO_DEBUG` is set to `False` and configu
 ## API Endpoints
 
 ### List Fizzbuzz Items
-- **Endpoint**: `GET /fizzbuzz/`
+- **Endpoint**: `GET /fizzbuzz`
 - **Response Body**:
     ```json
     [
@@ -63,7 +63,7 @@ For production environments, ensure `DJANGO_DEBUG` is set to `False` and configu
     ```
 
 ### Retrieve a Fizzbuzz Item
-- **Endpoint**: `GET /fizzbuzz/{id}/`
+- **Endpoint**: `GET /fizzbuzz/{id}`
 - **Response Body**:
     ```json
     {
@@ -75,7 +75,7 @@ For production environments, ensure `DJANGO_DEBUG` is set to `False` and configu
     ```
 
 ### Create a Fizzbuzz Item
-- **Endpoint**: `POST /fizzbuzz/`
+- **Endpoint**: `POST /fizzbuzz`
 - **Request Body**:
     ```json
     {
