@@ -22,7 +22,7 @@ The Fizzbuzz API is a Django REST framework-based backend service that provides 
 Clone the repository and set up a local development environment:
 
 ```bash
-git clone https://github.com/yourusername/fizzbuzz.git
+git clone https://github.com/ahmadrezatabibi/fizzbuzz.git
 cd fizzbuzz
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
